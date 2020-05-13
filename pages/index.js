@@ -1,6 +1,11 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
+
+import Homepage from '../src/components/homepage';
 
 export default function Index() {
-  return <Container maxWidth='sm'>yo yo yo</Container>;
+  return (
+    <>
+      <Homepage />
+    </>
+  );
 }
