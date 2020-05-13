@@ -14,12 +14,17 @@ export default makeStyles((theme) => ({
     marginBottom: '1rem',
   },
   jumbotronBtn: {
-    fontSize: '1.25rem',
+    fontSize: '1.35rem',
     fontFamily: 'Raleway, sans-serif',
-    // color: theme.palette.primary.main,
-    color: theme.palette.common.white,
+    color: theme.palette.primary.main,
     padding: '0.8rem 2.5rem',
     textTransform: 'none',
+    '&:hover': {
+      backgroundColor: theme.palette.common.greyLight,
+    },
+    '&:active': {
+      backgroundColor: theme.palette.common.greyLight,
+    },
   },
   welcomeText: {
     letterSpacing: '1.5px',

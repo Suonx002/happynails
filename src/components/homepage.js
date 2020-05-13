@@ -20,7 +20,7 @@ const Homepage = () => {
           <Grid item>
             <Typography
               variant='h2'
-              color='primary'
+              color='secondary'
               className={classes.welcomeText}>
               Welcome to
             </Typography>
@@ -28,14 +28,14 @@ const Homepage = () => {
           <Grid item className={classes.jumbotronItem}>
             <Typography
               variant='h1'
-              color='primary'
+              color='secondary'
               className={classes.companyText}>
               Happy Nails Studio 2
             </Typography>
           </Grid>
           <Grid item className={classes.jumbotronItem}>
             <Button
-              variant='outlined'
+              variant='contained'
               color='secondary'
               className={classes.jumbotronBtn}>
               Book Now

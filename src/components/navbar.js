@@ -53,7 +53,7 @@ const Navbar = () => {
               <Button
                 href='#'
                 className={classes.rightMenuBook}
-                variant='outlined'
+                variant='contained'
                 color='secondary'>
                 Book Now
               </Button>

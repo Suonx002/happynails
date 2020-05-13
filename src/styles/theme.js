@@ -3,10 +3,14 @@ import { red } from '@material-ui/core/colors';
 
 const primary = '#f368e0';
 const secondary = '#fff';
+const greyLight = '#e5e5e5';
 
 // Create a theme instance.
 const theme = createMuiTheme({
   palette: {
+    common: {
+      greyLight,
+    },
     primary: {
       main: primary,
     },

@@ -45,8 +45,13 @@ export default makeStyles((theme) => ({
     fontSize: '1.25rem',
     textDecoration: 'none',
     textTransform: 'none',
-    // color: theme.palette.primary.main,
-    color: theme.palette.common.white,
-    padding: '0.5rem 1rem',
+    color: theme.palette.primary.main,
+    padding: '0.7rem 2rem',
+    '&:hover': {
+      backgroundColor: theme.palette.common.greyLight,
+    },
+    '&:active': {
+      backgroundColor: theme.palette.common.greyLight,
+    },
   },
 }));
