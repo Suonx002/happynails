@@ -117,6 +117,7 @@ const Service = () => {
           <Grid item container className={classes.serviceContainer}>
             {servicesList.map((service) => (
               <Grid
+                key={service.name}
                 item
                 container
                 md={4}

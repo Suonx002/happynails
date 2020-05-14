@@ -71,7 +71,13 @@ const Gallery = () => {
           </Grid>
           <Grid item container className={classes.galleryContainer}>
             {galleryList.map((gallery) => (
-              <Grid item xs={6} sm={4} md={3} className={classes.galleryItem}>
+              <Grid
+                item
+                xs={6}
+                sm={4}
+                md={3}
+                className={classes.galleryItem}
+                key={gallery.name}>
                 <img
                   onClick={() => {
                     setOpenDialog(true);

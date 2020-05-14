@@ -27,6 +27,7 @@ const About = () => {
             <Carousel interval={3000}>
               {images.map((image) => (
                 <img
+                  key={image.imageUrl}
                   src={image.imageUrl}
                   alt={image.imageUrl}
                   className={classes.aboutImage}
