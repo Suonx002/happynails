@@ -10,7 +10,7 @@ const Homepage = () => {
   const classes = useStyles();
 
   return (
-    <main className={classes.homepage}>
+    <section className={classes.homepage}>
       <Navbar />
       <Container maxWidth='lg'>
         <Grid
@@ -43,7 +43,7 @@ const Homepage = () => {
           </Grid>
         </Grid>
       </Container>
-    </main>
+    </section>
   );
 };
 
