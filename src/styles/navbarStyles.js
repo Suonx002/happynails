@@ -3,7 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
   appbar: {
     height: 90,
-    overflow: 'hidden',
+    // overflow: 'hidden',
+    overflowY: 'hidden',
   },
   toolbarMargin: {
     ...theme.mixins.toolbar,
