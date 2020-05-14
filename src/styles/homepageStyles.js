@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
   homepage: {
-    background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('/assets/hero.jpg') no-repeat center center/cover`,
+    background: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('/assets/hero.jpg') no-repeat center center/cover`,
     height: '100vh',
     width: '100%',
     overflow: 'hidden',

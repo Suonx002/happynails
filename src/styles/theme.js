@@ -1,7 +1,9 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import { red } from '@material-ui/core/colors';
 
-const primary = '#800000';
+//const primary = '#800000';
+// const primary = '#e00000';
+const primary = '#F8959C';
 const secondary = '#fff';
 const grey = '#888888';
 const greyLight = '#e5e5e5';
