@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 
 import { Container, Grid, Typography, Dialog } from '@material-ui/core';
 import useStyles from '../styles/galleryStyles';
@@ -62,6 +63,21 @@ const Gallery = () => {
 
   return (
     <section className={classes.gallery} id='gallery'>
+      <Head>
+        <title key='title'>Gallery - Happy Nails Studio 2 in Lebanon, PA</title>
+        <meta
+          name='description'
+          key='description'
+          content='Gallery image of clients'
+        />
+        <meta
+          property='og:title'
+          content='Happy Nails Studio 2 | Gallery'
+          key='og:title'
+        />
+        {/* <meta property="og:url" key="og:url" content="arc.com/about" />
+        <link rel="canonical" key="canonical" href="arc.com/about" /> */}
+      </Head>
       <Container maxWidth='lg'>
         <Grid container direction='column'>
           <Grid item>

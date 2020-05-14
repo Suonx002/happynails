@@ -4,7 +4,7 @@ import { red } from '@material-ui/core/colors';
 // const primary = '#F8959C';
 const primary = '#ff7675';
 const secondary = '#fff';
-const grey = '#888888';
+const grey = '#333333';
 const greyLight = '#e5e5e5';
 const bodyColor = '#2980b9';
 

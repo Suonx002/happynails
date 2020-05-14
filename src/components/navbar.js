@@ -122,8 +122,10 @@ const Navbar = () => {
   );
 
   const mobileMenu = (
-    <nav className={classes.drawerMenu}>
+    <div className={classes.drawerMenu}>
       <IconButton
+        aria-label='menuIcon'
+        role='button'
         className={classes.drawerMenuIconContainer}
         disableRipple
         onClick={() => setOpenDrawer(true)}>
@@ -234,7 +236,7 @@ const Navbar = () => {
           </ListItem>
         </List>
       </Drawer>
-    </nav>
+    </div>
   );
 
   return (

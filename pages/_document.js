@@ -9,12 +9,25 @@ export default class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-          {/* PWA primary color */}
-          <meta name='theme-color' content={theme.palette.primary.main} />
           <link
             href='https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap'
             rel='stylesheet'
           />
+          {/* PWA primary color */}
+          <meta name='theme-color' content={theme.palette.primary.main} />
+
+          <meta property='og:title' content='Happy Nails Studio 2' />
+          <meta
+            property='og:description'
+            content='We offer professional nail services to our clients.'
+          />
+          <meta property='og:url' content='' />
+          <meta property='og:type' content='website' />
+          <meta property='og:image' content='/assets/main_logo.png' />
+          <meta property='og:image:type' content='image/png' />
+          <meta property='og:image:width' content='1200' />
+          <meta property='og:image:height' content='630' />
+          <meta property='og:image:alt' content='company landing' />
         </Head>
         <body>
           <Main />

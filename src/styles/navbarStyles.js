@@ -7,7 +7,8 @@ export default makeStyles((theme) => ({
   },
   toolbarMargin: {
     ...theme.mixins.toolbar,
-    marginTop: '1rem',
+    overflow: 'hidden',
+    marginBottom: '1rem',
   },
   logoContainer: {
     height: 250,
