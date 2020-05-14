@@ -4,12 +4,20 @@ export default makeStyles((theme) => ({
   contact: {
     padding: '2rem 0',
   },
+  contactHeading: {
+    marginBottom: '2rem',
+  },
+  contractItemContainer: {
+    [theme.breakpoints.down('sm')]: {
+      marginBottom: '1rem',
+    },
+  },
   contactItem: {
     marginBottom: '1rem',
     color: theme.palette.primary.main,
   },
   contactLink: {
-    display: 'block',
+    display: 'inline-block',
     textDecoration: 'none',
     color: theme.palette.common.grey,
   },
