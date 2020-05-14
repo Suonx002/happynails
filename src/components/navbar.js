@@ -6,6 +6,7 @@ import {
   Toolbar,
   IconButton,
   Typography,
+  role="button"
   Button,
   Drawer,
   List,
@@ -31,7 +32,8 @@ const Navbar = () => {
     <ul className={classes.rightMenuContainer}>
       <li className={classes.rightMenuItem}>
         <Button
-          aria-label='home'
+         role="button"
+         aria-label='home'
           component={Link}
           spy={true}
           smooth={true}
@@ -45,7 +47,8 @@ const Navbar = () => {
       </li>
       <li className={classes.rightMenuItem}>
         <Button
-          aria-label='about'
+         role="button"
+         aria-label='about'
           component={Link}
           spy={true}
           smooth={true}
@@ -59,7 +62,8 @@ const Navbar = () => {
       </li>
       <li className={classes.rightMenuItem}>
         <Button
-          aria-label='services'
+         role="button"
+         aria-label='services'
           component={Link}
           spy={true}
           smooth={true}
@@ -73,7 +77,8 @@ const Navbar = () => {
       </li>
       <li className={classes.rightMenuItem}>
         <Button
-          aria-label='gallery'
+         role="button"
+         aria-label='gallery'
           component={Link}
           spy={true}
           smooth={true}
@@ -87,7 +92,8 @@ const Navbar = () => {
       </li>
       <li className={classes.rightMenuItem}>
         <Button
-          aria-label='contact'
+         role="button"
+         aria-label='contact'
           component={Link}
           spy={true}
           smooth={true}
@@ -101,6 +107,7 @@ const Navbar = () => {
       </li>
       <li className={classes.rightMenuItem}>
         <Button
+        role="button"
           aria-label='book appointment'
           disableRipple
           rel='noopener noreferrer'
@@ -130,6 +137,7 @@ const Navbar = () => {
         <List className={classes.listContainer} disablePadding>
           <ListItem
             aria-label='close'
+            role="button"
             button
             divider
             className={classes.closeContainer}
@@ -143,6 +151,7 @@ const Navbar = () => {
           </ListItem>
           <ListItem
             aria-label='home'
+            role="button"
             button
             component={Link}
             spy={true}
@@ -157,6 +166,7 @@ const Navbar = () => {
           </ListItem>
           <ListItem
             aria-label='about'
+            role="button"
             button
             component={Link}
             spy={true}
@@ -171,6 +181,7 @@ const Navbar = () => {
           </ListItem>
           <ListItem
             aria-label='services'
+            role="button"
             button
             component={Link}
             spy={true}
@@ -184,6 +195,7 @@ const Navbar = () => {
           </ListItem>
           <ListItem
             aria-label='gallery'
+            role="button"
             button
             component={Link}
             spy={true}
@@ -197,6 +209,7 @@ const Navbar = () => {
           </ListItem>
           <ListItem
             aria-label='contact'
+            role="button"
             button
             component={Link}
             spy={true}
@@ -210,6 +223,7 @@ const Navbar = () => {
           </ListItem>
           <ListItem
             aria-label='book appointment'
+            role="button"
             button
             className={classes.drawerGetInTouchBtn}
             rel='noopener noreferrer'

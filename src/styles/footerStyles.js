@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
   footer: {
-    padding: '1rem',
+    padding: '0.5rem',
     backgroundColor: theme.palette.primary.main,
   },
   footerText: {

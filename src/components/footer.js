@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className={classes.footer}>
       <Typography
-        variant='h3'
+        variant='h4'
         color='secondary'
         align='center'
         className={classes.footerText}>

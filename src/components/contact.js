@@ -40,6 +40,7 @@ const Contact = () => {
               <Grid item className={classes.contactItem}>
                 <Typography variant='body1'>Phone Number: </Typography>
                 <a
+                  role='button'
                   aria-label='phone number'
                   href='tel:1-717-273-6245'
                   rel='noopener noreferrer'
@@ -51,6 +52,7 @@ const Contact = () => {
               <Grid item className={classes.contactItem}>
                 <Typography variant='body1'>Address: </Typography>
                 <a
+                  role='button'
                   aria-label='address'
                   href='https://www.google.com/maps/place/1735+Quentin+Rd,+Lebanon,+PA+17042/@40.3107722,-76.4257995,17z/data=!3m1!4b1!4m5!3m4!1s0x89c61d31bceed6a7:0x6b41f399a1574c06!8m2!3d40.3107681!4d-76.4236108'
                   rel='noopener noreferrer'
@@ -62,6 +64,7 @@ const Contact = () => {
               <Grid item className={classes.contactItem}>
                 <Typography variant='body1'>Email: </Typography>
                 <a
+                  role='button'
                   href='mailto:happynailsstudio2@gmail.com'
                   rel='noopener noreferrer'
                   target='_blank'
@@ -72,6 +75,7 @@ const Contact = () => {
               <Grid item className={classes.contactItem}>
                 <Typography variant='body1'>Social: </Typography>
                 <IconButton
+                  role='button'
                   aria-label='facebook'
                   className={classes.contactBtnContainer}
                   href='https://www.facebook.com/HappyNailsStudioTwo'
