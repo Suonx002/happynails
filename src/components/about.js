@@ -20,7 +20,7 @@ const images = [
 const About = () => {
   const classes = useStyles();
   return (
-    <div className={classes.about}>
+    <section className={classes.about}>
       <Container maxWidth='lg'>
         <Grid container>
           <Grid item container md={6}>
@@ -29,7 +29,7 @@ const About = () => {
                 <img
                   src={image.imageUrl}
                   alt={image.imageUrl}
-                  className={classes.image}
+                  className={classes.aboutImage}
                 />
               ))}
             </Carousel>
@@ -46,21 +46,21 @@ const About = () => {
               </Typography>
             </Grid>
             <Grid item className={classes.aboutItem}>
-              <Typography variant='body1' color='primary'>
+              <Typography variant='body1' className={classes.aboutText}>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
                 recusandae repellendus molestiae distinctio eos incidunt nisi et
                 odio labore cum!
               </Typography>
             </Grid>
             <Grid item className={classes.aboutItem}>
-              <Typography variant='body1' color='primary'>
+              <Typography variant='body1' className={classes.aboutText}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
                 esse assumenda eaque alias, adipisci repellat amet, sunt soluta
                 maxime facere doloremque veniam, repudiandae officiis suscipit.
               </Typography>
             </Grid>
             <Grid item className={classes.aboutItem}>
-              <Typography variant='body1' color='primary'>
+              <Typography variant='body1' className={classes.aboutText}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
                 esse assumenda eaque alias, adipisci repellat amet, sunt soluta
                 maxime facere doloremque veniam, repudiandae officiis suscipit.
@@ -69,7 +69,7 @@ const About = () => {
           </Grid>
         </Grid>
       </Container>
-    </div>
+    </section>
   );
 };
 

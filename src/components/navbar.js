@@ -14,7 +14,7 @@ const Navbar = () => {
   const classes = useStyles();
 
   return (
-    <>
+    <nav>
       <AppBar
         position='fixed'
         color='primary'
@@ -62,7 +62,7 @@ const Navbar = () => {
         </Toolbar>
       </AppBar>
       <div className={classes.toolbarMargin} />
-    </>
+    </nav>
   );
 };
 
