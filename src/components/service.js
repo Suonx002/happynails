@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Container, Grid, Typography } from '@material-ui/core';
+// import {useTheme} from '@material-ui/core/styles'
 import useStyles from '../styles/serviceStyles';
 
 const servicesList = [
@@ -72,18 +73,15 @@ const servicesList = [
     name: 'Nail Designs',
     price: '$5 UP',
   },
-  {
-    name: 'Cut Down',
-    price: '$3',
-  },
-  {
-    name: 'French',
-    price: '$5',
-  },
-  {
-    name: 'Repairs',
-    price: '$3 UP EACH',
-  },
+  // {
+  //   name: 'Cut Down',
+  //   price: '$3',
+  // },
+  // {
+  //   name: 'French',
+  //   price: '$5',
+  // },
+
   {
     name: 'Eyebrows',
     price: '$7',
@@ -96,10 +94,16 @@ const servicesList = [
     name: 'Chin',
     price: '$10 UP',
   },
+  {
+    name: 'Repairs',
+    price: '$3 UP EACH',
+  },
 ];
 
 const Service = () => {
   const classes = useStyles();
+  // const theme = useTheme();
+  // const matchesSM = useMediaQuery(theme.breakpoints.down('sm'))
 
   return (
     <section className={classes.service}>
@@ -111,24 +115,27 @@ const Service = () => {
             </Typography>
           </Grid>
           <Grid item container className={classes.serviceContainer}>
-            <Grid item container sm={4}>
+            {servicesList.map((service) => (
               <Grid
                 item
                 container
-                justify='space-between'
+                md={4}
                 className={classes.serviceItemContainer}>
-                <Grid item>
+                <Grid item xs={8}>
                   <Typography variant='body1' className={classes.serviceName}>
-                    Full Set
+                    {service.name}
                   </Typography>
                 </Grid>
-                <Grid item>
-                  <Typography variant='body1' className={classes.servicePrice}>
-                    $26 UP
+                <Grid item xs={4}>
+                  <Typography
+                    variant='body1'
+                    align='right'
+                    className={classes.servicePrice}>
+                    {service.price}
                   </Typography>
                 </Grid>
               </Grid>
-            </Grid>
+            ))}
           </Grid>
         </Grid>
       </Container>

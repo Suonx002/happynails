@@ -8,15 +8,25 @@ export default makeStyles((theme) => ({
     marginBottom: '2rem',
   },
   serviceContainer: {
-    // border: `2px solid ${theme.palette.primary.main}`,
+    backgroundImage: `linear-gradient(135deg, ${theme.palette.primary.light},${theme.palette.primary.main})`,
+    color: theme.palette.common.white,
+    borderRadius: theme.shape.borderRadius,
+    padding: '2rem',
+    [theme.breakpoints.down('sm')]: {
+      padding: '1rem',
+    },
+    [theme.breakpoints.down('xs')]: {
+      padding: '1rem 0.5rem',
+    },
   },
   serviceItemContainer: {
-    padding: '1rem',
-    borderBottom: `2px solid ${theme.palette.primary.light}`,
+    padding: '0.5rem 1rem',
+    marginBottom: '0.5rem',
   },
-  serviceName: {},
+  serviceName: {
+    borderBottom: `1px solid ${theme.palette.common.white}`,
+  },
   servicePrice: {
-    display: 'inline-block',
-    marginLeft: 'auto',
+    borderBottom: `1px solid ${theme.palette.common.white}`,
   },
 }));
