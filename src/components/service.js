@@ -106,7 +106,7 @@ const Service = () => {
   // const matchesSM = useMediaQuery(theme.breakpoints.down('sm'))
 
   return (
-    <section className={classes.service}>
+    <section className={classes.service} id='services'>
       <Container maxWidth='lg'>
         <Grid container direction='column'>
           <Grid item className={classes.serviceHeading}>

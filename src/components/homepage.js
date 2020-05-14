@@ -10,7 +10,7 @@ const Homepage = () => {
   const classes = useStyles();
 
   return (
-    <section className={classes.homepage}>
+    <section className={classes.homepage} id='home'>
       <Navbar />
       <Container maxWidth='lg'>
         <Grid
@@ -37,6 +37,9 @@ const Homepage = () => {
             <Button
               variant='contained'
               color='secondary'
+              rel='noopener noreferrer'
+              target='_blank'
+              href='https://my.setmore.com/bookingpage/6c797dd9-b8ef-4fbb-b35e-8b4b0bea18aa?isFBBDP=true'
               className={classes.jumbotronBtn}>
               Book Now
             </Button>

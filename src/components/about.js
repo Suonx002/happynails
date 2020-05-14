@@ -20,7 +20,7 @@ const images = [
 const About = () => {
   const classes = useStyles();
   return (
-    <section className={classes.about}>
+    <section className={classes.about} id='about'>
       <Container maxWidth='lg'>
         <Grid container>
           <Grid item container md={6}>

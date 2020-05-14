@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 
 import {
   AppBar,
@@ -6,12 +7,209 @@ import {
   IconButton,
   Typography,
   Button,
+  Drawer,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  useMediaQuery,
 } from '@material-ui/core';
+import { useTheme } from '@material-ui/core/styles';
+import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
 
 import useStyles from '../styles/navbarStyles';
 
 const Navbar = () => {
   const classes = useStyles();
+  const theme = useTheme();
+  const matchesMD = useMediaQuery(theme.breakpoints.down('md'));
+
+  const [openDrawer, setOpenDrawer] = useState(false);
+
+  const desktopMenu = (
+    <ul className={classes.rightMenuContainer}>
+      <li className={classes.rightMenuItem}>
+        <Button
+          component={Link}
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={600}
+          to='home'
+          disableRipple
+          className={classes.rightMenuLink}>
+          Home
+        </Button>
+      </li>
+      <li className={classes.rightMenuItem}>
+        <Button
+          component={Link}
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={600}
+          to='about'
+          disableRipple
+          className={classes.rightMenuLink}>
+          About
+        </Button>
+      </li>
+      <li className={classes.rightMenuItem}>
+        <Button
+          component={Link}
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={600}
+          to='services'
+          disableRipple
+          className={classes.rightMenuLink}>
+          Services
+        </Button>
+      </li>
+      <li className={classes.rightMenuItem}>
+        <Button
+          component={Link}
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={600}
+          to='gallery'
+          disableRipple
+          className={classes.rightMenuLink}>
+          Gallery
+        </Button>
+      </li>
+      <li className={classes.rightMenuItem}>
+        <Button
+          component={Link}
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={600}
+          to='contact'
+          disableRipple
+          className={classes.rightMenuLink}>
+          Contact
+        </Button>
+      </li>
+      <li className={classes.rightMenuItem}>
+        <Button
+          disableRipple
+          rel='noopener noreferrer'
+          target='_blank'
+          href='https://my.setmore.com/bookingpage/6c797dd9-b8ef-4fbb-b35e-8b4b0bea18aa?isFBBDP=true'
+          className={classes.rightMenuBook}
+          variant='contained'
+          color='secondary'>
+          Book Now
+        </Button>
+      </li>
+    </ul>
+  );
+
+  const mobileMenu = (
+    <nav className={classes.drawerMenu}>
+      <IconButton
+        className={classes.drawerMenuIconContainer}
+        disableRipple
+        onClick={() => setOpenDrawer(true)}>
+        <MenuIcon className={classes.drawerMenuIcon} />
+      </IconButton>
+      <Drawer
+        anchor='right'
+        open={openDrawer}
+        onClose={() => setOpenDrawer(false)}>
+        <List className={classes.listContainer} disablePadding>
+          <ListItem
+            button
+            divider
+            className={classes.closeContainer}
+            disableRipple>
+            <ListItemIcon className={classes.closeIconContainer}>
+              <CloseIcon
+                className={classes.iconContainer}
+                onClick={() => setOpenDrawer(false)}
+              />
+            </ListItemIcon>
+          </ListItem>
+          <ListItem
+            button
+            component={Link}
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={600}
+            to='home'
+            onClick={() => setOpenDrawer(false)}
+            divider
+            className={classes.listItem}>
+            <ListItemText primary='Home' />
+          </ListItem>
+          <ListItem
+            button
+            component={Link}
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={600}
+            to='about'
+            onClick={() => setOpenDrawer(false)}
+            divider
+            className={classes.listItem}>
+            <ListItemText primary='About' />
+          </ListItem>
+          <ListItem
+            button
+            component={Link}
+            spy={true}
+            smooth={true}
+            duration={600}
+            to='services'
+            onClick={() => setOpenDrawer(false)}
+            divider
+            className={classes.listItem}>
+            <ListItemText primary='Services' />
+          </ListItem>
+          <ListItem
+            button
+            component={Link}
+            spy={true}
+            smooth={true}
+            duration={600}
+            to='gallery'
+            onClick={() => setOpenDrawer(false)}
+            divider
+            className={classes.listItem}>
+            <ListItemText primary='Gallery' />
+          </ListItem>
+          <ListItem
+            button
+            component={Link}
+            spy={true}
+            smooth={true}
+            duration={600}
+            to='contact'
+            onClick={() => setOpenDrawer(false)}
+            divider
+            className={classes.listItem}>
+            <ListItemText primary='Contact' />
+          </ListItem>
+          <ListItem
+            button
+            className={classes.drawerGetInTouchBtn}
+            rel='noopener noreferrer'
+            target='_blank'
+            component='a'
+            href='https://my.setmore.com/bookingpage/6c797dd9-b8ef-4fbb-b35e-8b4b0bea18aa?isFBBDP=true'
+            onClick={() => setOpenDrawer(false)}>
+            <ListItemText primary='Get In Touch' />
+          </ListItem>
+        </List>
+      </Drawer>
+    </nav>
+  );
 
   return (
     <nav>
@@ -28,37 +226,7 @@ const Navbar = () => {
               className={classes.logo}
             />
           </IconButton>
-          <ul className={classes.rightMenuContainer}>
-            <li className={classes.rightMenuItem}>
-              <Button href='#' className={classes.rightMenuLink}>
-                Home
-              </Button>
-            </li>
-            <li className={classes.rightMenuItem}>
-              <Button href='#' className={classes.rightMenuLink}>
-                About
-              </Button>
-            </li>
-            <li className={classes.rightMenuItem}>
-              <Button href='#' className={classes.rightMenuLink}>
-                Services
-              </Button>
-            </li>
-            <li className={classes.rightMenuItem}>
-              <Button href='#' className={classes.rightMenuLink}>
-                Contact
-              </Button>
-            </li>
-            <li className={classes.rightMenuItem}>
-              <Button
-                href='#'
-                className={classes.rightMenuBook}
-                variant='contained'
-                color='secondary'>
-                Book Now
-              </Button>
-            </li>
-          </ul>
+          {matchesMD ? mobileMenu : desktopMenu}
         </Toolbar>
       </AppBar>
       <div className={classes.toolbarMargin} />

@@ -1,8 +1,6 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import { red } from '@material-ui/core/colors';
 
-//const primary = '#800000';
-// const primary = '#e00000';
 const primary = '#F8959C';
 const secondary = '#fff';
 const grey = '#888888';
@@ -10,6 +8,8 @@ const greyLight = '#e5e5e5';
 const bodyColor = '#2980b9';
 
 // Create a theme instance.
+const defaultTheme = createMuiTheme();
+
 const theme = createMuiTheme({
   palette: {
     common: {
@@ -30,24 +30,60 @@ const theme = createMuiTheme({
       fontSize: '3.5rem',
       fontWeight: 700,
       lineHeight: 1.5,
+      [defaultTheme.breakpoints.down('md')]: {
+        fontSize: '3rem',
+      },
+      [defaultTheme.breakpoints.down('sm')]: {
+        fontSize: '2.5rem',
+      },
+      [defaultTheme.breakpoints.down('xs')]: {
+        fontSize: '1.8rem',
+      },
     },
     h2: {
       fontFamily: 'Raleway, sans-serif',
       fontSize: '2.5rem',
       fontWeight: 500,
       lineHeight: 1.5,
+      [defaultTheme.breakpoints.down('md')]: {
+        fontSize: '2.3rem',
+      },
+      [defaultTheme.breakpoints.down('sm')]: {
+        fontSize: '2.1rem',
+      },
+      [defaultTheme.breakpoints.down('xs')]: {
+        fontSize: '1.5rem',
+      },
     },
     h3: {
       fontFamily: 'Raleway, sans-serif',
       fontSize: '1.5rem',
       fontWeight: 500,
       lineHeight: 1.5,
+      [defaultTheme.breakpoints.down('md')]: {
+        fontSize: '1.4rem',
+      },
+      [defaultTheme.breakpoints.down('sm')]: {
+        fontSize: '1.3rem',
+      },
+      [defaultTheme.breakpoints.down('xs')]: {
+        fontSize: '1.2rem',
+      },
     },
     h4: {
       fontFamily: 'Raleway, sans-serif',
       fontSize: '1.25rem',
       fontWeight: 500,
       lineHeight: 1.5,
+      [defaultTheme.breakpoints.down('md')]: {
+        fontSize: '1.2rem',
+      },
+      [defaultTheme.breakpoints.down('sm')]: {
+        fontSize: '1.15rem',
+      },
+      [defaultTheme.breakpoints.down('xs')]: {
+        fontSize: '1.1rem',
+      },
     },
     h5: {
       fontFamily: 'Raleway, sans-serif',

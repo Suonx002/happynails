@@ -61,7 +61,7 @@ const Gallery = () => {
   const [openDialog, setOpenDialog] = useState(false);
 
   return (
-    <section className={classes.gallery}>
+    <section className={classes.gallery} id='gallery'>
       <Container maxWidth='lg'>
         <Grid container direction='column'>
           <Grid item>

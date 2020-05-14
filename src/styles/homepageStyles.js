@@ -25,6 +25,18 @@ export default makeStyles((theme) => ({
     '&:active': {
       backgroundColor: theme.palette.common.greyLight,
     },
+    [theme.breakpoints.down('md')]: {
+      fontSize: '1.25rem',
+      padding: '0.7rem 2.3rem',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1.15rem',
+      padding: '0.6rem 2.1rem',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '1.25rem',
+      padding: '0.5rem 1.8rem',
+    },
   },
   welcomeText: {
     letterSpacing: '1.5px',

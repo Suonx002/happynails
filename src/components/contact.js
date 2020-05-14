@@ -17,7 +17,7 @@ const Contact = () => {
   const matchesSM = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <section className={classes.contact}>
+    <section className={classes.contact} id='contact'>
       <Container maxWidth='lg'>
         <Grid container direction='column'>
           <Grid item>
@@ -26,7 +26,7 @@ const Contact = () => {
               color='primary'
               align='center'
               className={classes.contactHeading}>
-              Contact
+              Contact Us
             </Typography>
           </Grid>
           <Grid item container>
