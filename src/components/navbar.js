@@ -31,6 +31,7 @@ const Navbar = () => {
     <ul className={classes.rightMenuContainer}>
       <li className={classes.rightMenuItem}>
         <Button
+          aria-label='home'
           component={Link}
           spy={true}
           smooth={true}
@@ -44,6 +45,7 @@ const Navbar = () => {
       </li>
       <li className={classes.rightMenuItem}>
         <Button
+          aria-label='about'
           component={Link}
           spy={true}
           smooth={true}
@@ -57,6 +59,7 @@ const Navbar = () => {
       </li>
       <li className={classes.rightMenuItem}>
         <Button
+          aria-label='services'
           component={Link}
           spy={true}
           smooth={true}
@@ -70,6 +73,7 @@ const Navbar = () => {
       </li>
       <li className={classes.rightMenuItem}>
         <Button
+          aria-label='gallery'
           component={Link}
           spy={true}
           smooth={true}
@@ -83,6 +87,7 @@ const Navbar = () => {
       </li>
       <li className={classes.rightMenuItem}>
         <Button
+          aria-label='contact'
           component={Link}
           spy={true}
           smooth={true}
@@ -96,6 +101,7 @@ const Navbar = () => {
       </li>
       <li className={classes.rightMenuItem}>
         <Button
+          aria-label='book appointment'
           disableRipple
           rel='noopener noreferrer'
           target='_blank'
@@ -123,6 +129,7 @@ const Navbar = () => {
         onClose={() => setOpenDrawer(false)}>
         <List className={classes.listContainer} disablePadding>
           <ListItem
+            aria-label='close'
             button
             divider
             className={classes.closeContainer}
@@ -135,6 +142,7 @@ const Navbar = () => {
             </ListItemIcon>
           </ListItem>
           <ListItem
+            aria-label='home'
             button
             component={Link}
             spy={true}
@@ -148,6 +156,7 @@ const Navbar = () => {
             <ListItemText primary='Home' />
           </ListItem>
           <ListItem
+            aria-label='about'
             button
             component={Link}
             spy={true}
@@ -161,6 +170,7 @@ const Navbar = () => {
             <ListItemText primary='About' />
           </ListItem>
           <ListItem
+            aria-label='services'
             button
             component={Link}
             spy={true}
@@ -173,6 +183,7 @@ const Navbar = () => {
             <ListItemText primary='Services' />
           </ListItem>
           <ListItem
+            aria-label='gallery'
             button
             component={Link}
             spy={true}
@@ -185,6 +196,7 @@ const Navbar = () => {
             <ListItemText primary='Gallery' />
           </ListItem>
           <ListItem
+            aria-label='contact'
             button
             component={Link}
             spy={true}
@@ -197,6 +209,7 @@ const Navbar = () => {
             <ListItemText primary='Contact' />
           </ListItem>
           <ListItem
+            aria-label='book appointment'
             button
             className={classes.drawerGetInTouchBtn}
             rel='noopener noreferrer'
@@ -204,7 +217,7 @@ const Navbar = () => {
             component='a'
             href='https://my.setmore.com/bookingpage/6c797dd9-b8ef-4fbb-b35e-8b4b0bea18aa?isFBBDP=true'
             onClick={() => setOpenDrawer(false)}>
-            <ListItemText primary='Get In Touch' />
+            <ListItemText primary='Book Now' />
           </ListItem>
         </List>
       </Drawer>

@@ -35,6 +35,7 @@ const Homepage = () => {
           </Grid>
           <Grid item className={classes.jumbotronItem}>
             <Button
+              aria-label='book appointment'
               variant='contained'
               color='secondary'
               rel='noopener noreferrer'
