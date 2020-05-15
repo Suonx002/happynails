@@ -19,7 +19,9 @@ export default function MyApp(props) {
   return (
     <React.Fragment>
       <Head>
-        <title>Happy Nails Studio 2 | Nails Salon </title>
+        <title>
+          Happy Nails Studio 2 | Nails Salon in Lebanon, Pennsylvania
+        </title>
         <meta
           name='viewport'
           content='minimum-scale=1, initial-scale=1, width=device-width'
