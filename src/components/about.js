@@ -49,23 +49,26 @@ const About = () => {
             </Grid>
             <Grid item className={classes.aboutItem}>
               <Typography variant='body1' className={classes.aboutText}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                recusandae repellendus molestiae distinctio eos incidunt nisi et
-                odio labore cum!
+                Welcome to Happy Nails Studio 2 in Lebanon, PA. We opened in
+                November 2019 and ready to assist you with all your nail salon
+                services.
               </Typography>
             </Grid>
             <Grid item className={classes.aboutItem}>
               <Typography variant='body1' className={classes.aboutText}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                esse assumenda eaque alias, adipisci repellat amet, sunt soluta
-                maxime facere doloremque veniam, repudiandae officiis suscipit.
+                Happy Nails Studio 2 is up to date with the latest treads and
+                technologies. Our place has the highest sanitation and hygiene
+                standards.
               </Typography>
             </Grid>
             <Grid item className={classes.aboutItem}>
               <Typography variant='body1' className={classes.aboutText}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                esse assumenda eaque alias, adipisci repellat amet, sunt soluta
-                maxime facere doloremque veniam, repudiandae officiis suscipit.
+                Walk-ins are always welcome, but appointments are preferred.
+              </Typography>
+            </Grid>
+            <Grid item className={classes.aboutItem}>
+              <Typography variant='body1' className={classes.aboutText}>
+                Give us a call or come in and see us soon!
               </Typography>
             </Grid>
           </Grid>
