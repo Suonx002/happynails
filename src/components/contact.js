@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 
 import {
   Container,
@@ -19,19 +18,6 @@ const Contact = () => {
 
   return (
     <section className={classes.contact} id='contact'>
-      <Head>
-        <title key='title'>
-          Contact Us - Happy Nails Studio 2 in Lebanon, PA
-        </title>
-        <meta name='description' key='description' content='You can' />
-        <meta
-          property='og:title'
-          content='Happy Nails Studio 2 | Contact Us'
-          key='og:title'
-        />
-        {/* <meta property="og:url" key="og:url" content="arc.com/about" />
-        <link rel="canonical" key="canonical" href="arc.com/about" /> */}
-      </Head>
       <Container maxWidth='lg'>
         <Grid container direction='column'>
           <Grid item>

@@ -9,6 +9,15 @@ export default makeStyles((theme) => ({
   },
   jumbotronContainer: {
     marginTop: '20rem',
+    [theme.breakpoints.down('md')]: {
+      marginTop: '18rem',
+    },
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '17rem',
+    },
+    [theme.breakpoints.down('xs')]: {
+      marginTop: '16rem',
+    },
   },
   jumbotronItem: {
     marginBottom: '1rem',

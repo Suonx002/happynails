@@ -1,5 +1,5 @@
 import React from 'react';
-import Head from 'next/head';
+
 import Carousel from 'react-material-ui-carousel';
 
 import { Container, Grid, Typography } from '@material-ui/core';
@@ -22,23 +22,6 @@ const About = () => {
   const classes = useStyles();
   return (
     <section className={classes.about} id='about'>
-      <Head>
-        <title key='title'>
-          About Us - Happy Nails Studio 2 in Lebanon, PA
-        </title>
-        <meta
-          name='description'
-          key='description'
-          content='Our Nails Salon history'
-        />
-        <meta
-          property='og:title'
-          content='Happy Nails Studio 2 | About Us'
-          key='og:title'
-        />
-        {/* <meta property="og:url" key="og:url" content="arc.com/about" />
-        <link rel="canonical" key="canonical" href="arc.com/about" /> */}
-      </Head>
       <Container maxWidth='lg'>
         <Grid container>
           <Grid item container md={6}>
