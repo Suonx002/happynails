@@ -88,7 +88,7 @@ const Contact = () => {
             {/* map */}
             <Grid item container direciton='column' md={8}>
               <iframe
-                title='address for google map'
+                title='1735 Quentin Rd. Lebanon, Pennsylvania'
                 src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.422847152954!2d-76.42579948406241!3d40.31077216999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c61d31bceed6a7%3A0x6b41f399a1574c06!2s1735%20Quentin%20Rd%2C%20Lebanon%2C%20PA%2017042!5e0!3m2!1sen!2sus!4v1589430743841!5m2!1sen!2sus'
                 width='100%'
                 height='450'
