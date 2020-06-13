@@ -6,7 +6,7 @@ const primary = '#ff7675';
 const secondary = '#fff';
 const grey = '#888';
 const greyLight = '#e5e5e5';
-const lightWhite = '#f3f3f3';
+const whiteLight = '#f3f3f3';
 const bodyColor = '#2980b9';
 
 // Create a theme instance.
@@ -18,7 +18,7 @@ const theme = createMuiTheme({
       grey,
       greyLight,
       bodyColor,
-      lightWhite,
+      whiteLight,
     },
     primary: {
       main: primary,

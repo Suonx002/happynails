@@ -23,7 +23,6 @@ const Contact = () => {
           <Grid item>
             <Typography
               variant='h2'
-              color='primary'
               align='center'
               className={classes.contactHeading}>
               Contact Us
@@ -35,10 +34,28 @@ const Contact = () => {
               item
               container
               direction='column'
-              md={4}
+              md={6}
               className={classes.contractItemContainer}>
               <Grid item className={classes.contactItem}>
-                <Typography variant='body1'>Phone Number: </Typography>
+                <Typography variant='h5' className={classes.contactTitle}>
+                  Hours:
+                </Typography>
+                <Typography
+                  variant='body1'
+                  className={classes.contactDescription}>
+                  Monday-Friday 9 am - 7 pm{' '}
+                </Typography>
+                <Typography
+                  variant='body1'
+                  className={classes.contactDescription}>
+                  {' '}
+                  Sunday 10 am - 5 pm{' '}
+                </Typography>
+              </Grid>
+              <Grid item className={classes.contactItem}>
+                <Typography variant='h5' className={classes.contactTitle}>
+                  Phone Number:{' '}
+                </Typography>
                 <a
                   role='button'
                   aria-label='phone number'
@@ -50,7 +67,9 @@ const Contact = () => {
                 </a>
               </Grid>
               <Grid item className={classes.contactItem}>
-                <Typography variant='body1'>Address: </Typography>
+                <Typography variant='h5' className={classes.contactTitle}>
+                  Address:{' '}
+                </Typography>
                 <a
                   role='button'
                   aria-label='address'
@@ -62,7 +81,9 @@ const Contact = () => {
                 </a>
               </Grid>
               <Grid item className={classes.contactItem}>
-                <Typography variant='body1'>Email: </Typography>
+                <Typography variant='h5' className={classes.contactTitle}>
+                  Email:{' '}
+                </Typography>
                 <a
                   role='button'
                   href='mailto:happynailsstudio2@gmail.com'
@@ -73,7 +94,9 @@ const Contact = () => {
                 </a>
               </Grid>
               <Grid item className={classes.contactItem}>
-                <Typography variant='body1'>Social: </Typography>
+                <Typography variant='h5' className={classes.contactTitle}>
+                  Social:{' '}
+                </Typography>
                 <IconButton
                   role='button'
                   aria-label='facebook'
@@ -84,9 +107,16 @@ const Contact = () => {
                   <FacebookIcon className={classes.contactBtn} />
                 </IconButton>
               </Grid>
+              <Grid item className={classes.contactItem}>
+                <Typography
+                  variant='body1'
+                  className={classes.contactDescription}>
+                  &copy; 2020 Happy Nails Studio 2 LLC. All Rights Reserved.
+                </Typography>
+              </Grid>
             </Grid>
             {/* map */}
-            <Grid item container direciton='column' md={8}>
+            <Grid item container direciton='column' md={6}>
               <iframe
                 title='1735 Quentin Rd. Lebanon, Pennsylvania'
                 src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.422847152954!2d-76.42579948406241!3d40.31077216999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c61d31bceed6a7%3A0x6b41f399a1574c06!2s1735%20Quentin%20Rd%2C%20Lebanon%2C%20PA%2017042!5e0!3m2!1sen!2sus!4v1589430743841!5m2!1sen!2sus'

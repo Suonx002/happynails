@@ -15,7 +15,7 @@ export default function Index() {
       <Service />
       <Gallery />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
