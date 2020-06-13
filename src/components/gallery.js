@@ -73,9 +73,9 @@ const Gallery = () => {
             {galleryList.map((gallery) => (
               <Grid
                 item
-                xs={6}
-                sm={4}
                 md={3}
+                sm={4}
+                xs={6}
                 className={classes.galleryItem}
                 key={gallery.name}>
                 <img

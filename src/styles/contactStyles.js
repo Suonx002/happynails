@@ -19,17 +19,19 @@ export default makeStyles((theme) => ({
     color: theme.palette.common.white,
   },
   contactTitle: {
-    fontSize: '1.25rem',
-    fontWeight: 400,
+    fontSize: '1.4rem',
+    fontWeight: 500,
     marginBottom: '0.5rem',
   },
   contactDescription: {
-    color: theme.palette.common.whiteLight,
+    color: theme.palette.common.white,
+    fontWeight: 300,
   },
   contactLink: {
     display: 'inline-block',
     textDecoration: 'none',
-    color: theme.palette.common.greyLight,
+    color: theme.palette.common.white,
+    fontWeight: 300,
   },
   contactBtnContainer: {
     marginTop: '0.5rem',
