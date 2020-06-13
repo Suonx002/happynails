@@ -7,27 +7,27 @@ import useStyles from '../styles/serviceStyles';
 const servicesList = [
   {
     name: 'Full Set',
-    price: '$26 UP',
+    price: '$26+',
   },
   {
     name: 'Fill In',
-    price: '$18 UP',
+    price: '$18+',
   },
   {
     name: 'Pink & White Full Set',
-    price: '$50 UP',
+    price: '$50+',
   },
   {
     name: 'Pink & White Fill In',
-    price: '$40 UP',
+    price: '$40+',
   },
   {
     name: 'Pink & White Gel Set',
-    price: '$60 UP',
+    price: '$60+',
   },
   {
     name: 'Pink & White Gel Fill',
-    price: '$40 UP',
+    price: '$40+',
   },
   {
     name: 'Manicure',
@@ -55,11 +55,11 @@ const servicesList = [
   },
   {
     name: 'Gel Full Set',
-    price: '$46 UP',
+    price: '$46+',
   },
   {
     name: 'Gel Fill In',
-    price: '$26 UP',
+    price: '$26+',
   },
   {
     name: 'Polish Change',
@@ -71,15 +71,15 @@ const servicesList = [
   },
   {
     name: 'Nail Designs',
-    price: '$5 UP',
+    price: '$5+',
   },
   // {
   //   name: 'Cut Down',
-  //   price: '$3',
+  //   price: '3',
   // },
   // {
   //   name: 'French',
-  //   price: '$5',
+  //   price: '5',
   // },
 
   {
@@ -92,11 +92,7 @@ const servicesList = [
   },
   {
     name: 'Chin',
-    price: '$10 UP',
-  },
-  {
-    name: 'Repairs',
-    price: '$3 UP EACH',
+    price: '$10+',
   },
 ];
 
@@ -110,11 +106,39 @@ const Service = () => {
       <Container maxWidth='lg'>
         <Grid container direction='column'>
           <Grid item className={classes.serviceHeading}>
-            <Typography variant='h2' color='primary' align='center'>
+            <Typography variant='h2' align='center'>
               Services
             </Typography>
           </Grid>
-          <Grid item container className={classes.serviceContainer}>
+          <Grid
+            item
+            container
+            className={classes.serviceContainer}
+            justify='space-around'>
+            {servicesList.map((service) => (
+              <Grid
+                key={service.name}
+                item
+                container
+                direction='column'
+                md={3}
+                sm={4}
+                xs={6}
+                className={classes.serviceItem}>
+                <Grid item>
+                  <Typography variant='body1' className={classes.serviceName}>
+                    {service.name}
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography variant='body1' className={classes.servicePrice}>
+                    {service.price}
+                  </Typography>
+                </Grid>
+              </Grid>
+            ))}
+          </Grid>
+          {/* <Grid item container className={classes.serviceContainer}>
             {servicesList.map((service) => (
               <Grid
                 key={service.name}
@@ -137,7 +161,7 @@ const Service = () => {
                 </Grid>
               </Grid>
             ))}
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </section>

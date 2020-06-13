@@ -23,7 +23,7 @@ export default makeStyles((theme) => ({
     marginBottom: '1rem',
   },
   jumbotronBtn: {
-    fontSize: '1.35rem',
+    fontSize: '1.1rem',
     fontFamily: 'Raleway, sans-serif',
     color: theme.palette.primary.main,
     padding: '0.8rem 2.5rem',

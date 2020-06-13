@@ -44,7 +44,7 @@ export default makeStyles((theme) => ({
   },
   rightMenuLink: {
     fontFamily: 'Raleway, sans-serif',
-    fontSize: '1.15rem',
+    fontSize: '1.1rem',
     textDecoration: 'none',
     fontWeight: 400,
     color: theme.palette.common.white,
@@ -60,11 +60,11 @@ export default makeStyles((theme) => ({
   },
   rightMenuBook: {
     fontFamily: 'Raleway, sans-serif',
-    fontSize: '1.15rem',
+    fontSize: '1.1rem',
     textDecoration: 'none',
     textTransform: 'none',
     color: theme.palette.primary.main,
-    padding: '0.65rem 2rem',
+    padding: '0.65rem 1.5rem',
     '&:hover': {
       backgroundColor: theme.palette.common.greyLight,
     },
